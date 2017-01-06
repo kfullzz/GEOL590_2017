@@ -9,27 +9,29 @@ author: Drew Steen
 ## Day 1, Wed Jan 11:
 
     1. Introductions. Each student states the phase of their project, their department, and their motivation for taking the class.
-
         * Class scheduling
-        
-    2. Organize groups 
 
+    2. Organize groups 
         1. Have students fill out experience questionnaire and add up points (on a 0-2 scale) 
         1. Have students line up by experience from most to least
         1. Divide into thirds, I guess. Each group of 3 must contain 1 student from each third.
         1. Go sit with your group. 
+
     3. Talk a bit about my class goals.
         1. What does it take to make research reproducible?
             * Reinhart - Rogoff Excel sheet story
+
         2. Why R? 
             * widely-used
             * open-source
             * excellent statistical, plotting, and report-generating capabilities
             * designed for scientists, by scientists
+
         3. Why not R?
             * slow (but...)
             * designed for scientists, by scientists
             * there are good alternatives - especially Python
+            
         4. What should you be able to do at the end of this class?
             * Import, process, and export results and plots in R.
             * Write simple functions - and hopefully packages - in R.
