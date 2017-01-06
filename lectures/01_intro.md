@@ -9,7 +9,10 @@ author: Drew Steen
 ## Day 1, Wed Jan 11:
 
     1. Introductions. Each student states the phase of their project, their department, and their motivation for taking the class.
+
+        * Class scheduling
     2. Organize groups 
+
         1. Have students fill out experience questionnaire and add up points (on a 0-2 scale) 
         1. Have students line up by experience from most to least
         1. Divide into thirds, I guess. Each group of 3 must contain 1 student from each third.
@@ -31,9 +34,7 @@ author: Drew Steen
             * Write simple functions - and hopefully packages - in R.
             * Know how to take a more systematic approach to data analysis, no matter what your platform. 
 
-
-
-# Assignment: 
+## Assignment: Due Friday, Jan 20
      * Read Millman and Perez. Make a 1-page (or less), bullet-pointed 'cheat sheet' of best practices for reproducible research. 
-     * Read the story of Reinhart and Rogoff [http://www.economist.com/news/finance-and-economics/21576362-seminal-analysis-relationship-between-debt-and-growth-comes-under](Economist article)
+     * Read the story of Reinhart and Rogoff [http://www.economist.com/news/finance-and-economics/21576362-seminal-analysis-relationship-between-debt-and-growth-comes-under](Economist article) and [http://rooseveltforward.org/researchers-finally-replicated-reinhart-rogoff-and-there-are-serious-problems/](blog post by Mike Konczal)
      * Figure out what the 'chon_rates.xlsx' spreadsheet does. The group should write a brief outline or flow chart. Turn in one per group. DON'T SPEND MORE THAN A HALF HOUR ON THIS
