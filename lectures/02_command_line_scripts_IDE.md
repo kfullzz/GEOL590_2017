@@ -23,6 +23,7 @@ Note that I put an underscore in `GEOL_590`. That was to avoid having a space in
 * **data**
 * **plots**
 * **misc**
+
 The **R** directory is for all of the R scripts that you will write. Raw data goes in the **data** directory. Take a wild guess where you should save your plots to. **misc** is for accessory files - that note to yourself about how you should do an analysis, or maybe a couple of key papers about your project.
 
 ## Making your file browser more useful:
@@ -34,7 +35,7 @@ File extensions are really just a hint to the computer as to what sort of file i
 
 # Scripts: The basis of reproducible data analysis
 
-R is a two-headed beast, like Orthrus, the two-headed dog of Greek legend, or the (http://muppet.wikia.com/wiki/Two-Headed_Monster)[two-headed monster from Sesame Street]. On the one head, it is a statistical computing environment: a computer program designed to help you to do data analysis, not unlike SAS or (*coughs*) Microsoft Excel. On the other head, it is a language that you can use to write new software. In principle you can write software to whatever you want, but in practice the language R is mainly good for analyzing data and presenting results. 
+R is a two-headed beast, like Orthrus, the two-headed dog of Greek legend, or the [two-headed monster from Sesame Street](http://muppet.wikia.com/wiki/Two-Headed_Monster). On the one head, it is a statistical computing environment: a computer program designed to help you to do data analysis, not unlike SAS or (*coughs*) Microsoft Excel. On the other head, it is a language that you can use to write new software. In principle you can write software to whatever you want, but in practice the language R is mainly good for analyzing data and presenting results. 
 
 These two aspects are what makes R great for reproducible data analysis. Using R as an environment, it is easy to interactively analyze data: you type in a command at the *console* (say, `2+2` and R displays the result (`4`). R in interactive mode is great for quick-and-dirty analyses and to learn how the language works. However, it is not reproducible, since (like with Excel) interactive analyses don't leave a record for future workers to follow.
 
@@ -56,5 +57,5 @@ It is important to remember: a script is just a series of commands stored in a t
 
 Back in the day before graphical user interfaces were available, the command line was the only way to tell your operating system to do stuff (for instance, launch a program or copy a file). Nowadays it is easy to do these sorts of thing via mouseclicks, but it is still helpful to have a direct way to issue unambiguous commands to the operating system. 
 
-We access the command line via the shell, a simple-seeming program that converts typed text into commands that the operating system can udnersand.
+We access the command line via the shell, a simple-seeming program that converts typed text into commands that the operating system can understand. If we want to run an R script, we essentially say: 'Operating system: please ask R to run all of the commands in this text document in order'. The precise syntax we use depends on what operating system we're using. On OSX, if we have a script called `my_analysis.R`, we might type 
 
