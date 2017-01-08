@@ -65,4 +65,49 @@ Super! I theory, we can use any text editor to write an R script, and then execu
 
 # The IDE, or Integrated Development Environment
 
-In truth, running scripts from the command line is pretty clunky. There are a lot of common tasks that could be made easier. This is the *raison d'&ecirc;tre* of the Integrated Development Envrironment (IDE). IDEs exist basically to simplify the process of writing code (text) and getting computers to run it. 
+In truth, running scripts from the command line is pretty clunky. There are a lot of common tasks that could be made easier. This is the *raison d'&ecirc;tre* of the Integrated Development Envrironment (IDE). IDEs exist to simplify the process of writing code (text) and getting computers to run it.
+
+There are several IDEs for R, but RStudio (available for free) is far-and-away the best one. Like any good IDE, RStudio has a deep, rich set of features that make it easier to write R code that does what you want it to do. However, at the core, RStudio contains two important parts: a text editor (not unlike TextWrangler or Notepad++) and a *console* which reports output from R. 
+
+## Projects and the working directory
+
+Before we do any calculations with RStudio, let's talk about one of it's most useful features: *Projects*. RStudio Projects are a great way to organize your real-world data analysis projects, and you should have a different RStudio Project for each actual project. Basically, RStudio Projects keep your data, scripts, and results organized between projects (as long as you keep everything related to different projects in different directories, as you should!). So, the first thing you do when you open RStudio is to make a new project. 
+
+To create a new project for this class, 
+* Open RStudio, and go to File -> New Project
+* Choose Existing Directory (since you've already set up a directory for this class), browse to the directory for this class, and click Create Project.
+* **If the directory is on Dropbox**, you need to take one more step: Turn of Selective Sync for the .Rproj file in your project directory. To do this,
+    * Quit RStudio
+    * Go to the Dropbox App
+    * Choose Settings -> Preferences. Under Account, clikc Selective Sync: Change Settings, navigate to your project folder, and unclick the box next to .Rproj.user. This will prevent RStudio and Dropbox getting into a fight about the correct current state of your RStudio Project.
+
+See more about RStudio Projects [here](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects). 
+
+## Quickstart guide to using RStudio
+
+When you open RStudio, on the left half of the screen you will see the R Console. Again, this is just a place where you can have a conversation with R: you can enter commands, and R can give you results, warnings, error messages and messages. Whenever R starts up it prints some text including the version number of R you are using, some license information, and some miscellaneous tips. This is just like what you saw when you started R from the command line. Try typing `2+2` and press enter (or return). Look, you got an answer! Super. 
+
+Now let's create a script. Go to File -> New File -> R Script. You should see a new window in the upper-left-hand corner of the RStudio window, containing your new, unsaved script. Type `2+2` again and press enter. Nothing happened. Why?
+
+You have made a text file with the text `2+2` in it, but you haven't told the computer to do anything with it. Click on the line that contains `2+2`, but now press command and enter at the same time (Mac) or ctrl+enter (Windows). This sends the command to the console, as if you had typed it in at the console.
+
+**Being able to write code in a script and execute it one line at a time is incredibly useful.** When I am doing data analysis, I want to end up with a reproducible script - but I also want to test my code as I go, to make sure it does what I think it is doing. By composing code in the script window and executing it line by line in the console, we can simultaneously write and test our code, giving us the best of R's 'heads', the statistical analysis environment and the programming language.
+
+## Some very basic basics of the R language
+
+Let's do a few more basic things with an R script. Notice the window in the upper right-hand corner. It has several tabs - the one labeled 'Environment' should be selected; if not, click on it. It should say 'environment is empty'. This is R's way of saying 'I do not have any results in my memory right now'. This, despite the fact that we have already asked R to do calculate the value of 2+2. 
+
+When we type `2+2`, R calculates the answer, and then instantly forgets about it. We have not told R to remember the result of the calculation, so it didn't. In fact, R did go slightly above and beyond the call of duty: it printed the result of the calculation to the console, even though we didn't ask it to do so. 
+
+*If you don't tell R to do anything with the result of a calculation, it will (usually) print the result to the console.* This is called automatic printing, and it is very handy, but it also sort of misses the point of using R for reproducible analysis. Most scripts have many lines of code - I think my papers tend to average in the high hundreds of lines - so we need R to remember the results of one calculation so that we can use them for the next calculation. To do this, we need to **assign the results of an operation to a name** - that is, we need to tell R something like "add 2+2, and assign a name to the result."
+
+The syntax for this is `a <- 2+2`, where `<-` is the *assignment operator*. `<-` is meant to represent an arrow, and the directonality of the arrow is important. I think of the arrow as implying that the value of a calculation is being 'poured' into a variable: 'add 2+2, and put the result into a variable called `a`'. 
+
+There are actually five different assigment operators in R, but I strongly discourage you from using any of them except for `<-`. You can use a backwards arrow to reverse your expression (`2+2 -> a`) but, except in special situations, this just makes your code more confusing. You will also see other people's code online (particularly older code) that uses `=` as an assignment operator, but I strongly reccomend you don't do this, for two reasons. First, it obscures the directionality of the calculation - with `<-`, it is easy to see that R is performing the calculation on the right hand of the assignment operator, and putting the result into the variable on the left hand. (If we write `a <- b`, it is easy to see that we are taking the value of `b` and assigning it to `a`, but with `a = b` it is harder to see whether the value of `b` is being assigned to `a` or vice versa). Secondly, we frequently use the `=` operator in a different context in R, and we don't want to get the two meanings of `=` confused.
+
+Try executing `a <- 2+2`, either in the script window (command+enter) or the console. Now look at the workspace: you see there is a column for **values**, and `a` is listed as having a value of 4. Great! Now you can do stuff with `a`. Try typing `2*a` at the console. You're on your way to performing your data analysis reproducibly.
+
+
+
+
+
