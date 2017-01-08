@@ -1,5 +1,5 @@
 ---
-title: Week 1 outline
+title: Section 1 outline
 date: 6 Jan 2016
 author: Drew Steen
 ---
