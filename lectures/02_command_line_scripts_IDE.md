@@ -33,8 +33,6 @@ File extensions are really just a hint to the computer as to what sort of file i
 
 By default operating systems typically hide file extensions. This is fine for many users, because the operating system shows a different icon for different file extensions, and may 'preview' the file as well. However, you will be using file extensions that your operating system doesn't know about, so your life will be much easier if you can see all file extensions. Google "show all file extensions in [your operating system]" to figure out how to do this on your system.
 
-# R in interactive mode
-
 # Scripts: The basis of reproducible data analysis
 
 R is a two-headed beast, like Orthrus, the two-headed dog of Greek legend, or the [two-headed monster from Sesame Street](http://muppet.wikia.com/wiki/Two-Headed_Monster). On the one head, it is a statistical computing environment: a computer program designed to help you to do data analysis, not unlike SAS or (*ahem*) Microsoft Excel. On the other head, it is a language that you can use to write new software. In principle you can write software to whatever you want, but in practice the language R is mainly good for analyzing data and presenting results. 
@@ -107,7 +105,11 @@ There are actually five different assigment operators in R, but I strongly disco
 
 Try executing `a <- 2+2`, either in the script window (command+enter) or the console. Now look at the workspace: you see there is a column for **values**, and `a` is listed as having a value of 4. Great! Now you can do stuff with `a`. Try typing `2*a` at the console. You're on your way to performing your data analysis reproducibly.
 
+## Leftover proof of concept: Running R from the command line
 
+Truth be told, I wasn't sure of where to put this bit of text, so I'm open to suggestions (you'll have a good way to make them once you learn how to use Git and Github). Anyhoo, it is worth proving to yourself that the R console in RStudio really is just a 'window' that looks onto R, which is a totally separate program. To do this: go back to the command line and simply type `R` (OSX) or `R.exe` (Windows). You'll see a window that looks just like the R console in RStudio, because that's what it is. 
+
+Did it work? Great! Now you will never have to do this again. There are specialized cases where it makes sense to run R scripts from the command line (beyond the scope of this course; usually you would do this when you want another program or script to automatically run an R script) for almost all users, almost all of the time, the best way to interact with R is via RStudio.
 
 
 
