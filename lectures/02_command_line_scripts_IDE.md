@@ -1,5 +1,6 @@
 ---
-title: Section 2 Note: The Command Line, Scripts, and the Integrated Development Environment
+title: "Section 2 Note: The Command Line, Scripts, and the Integrated Development Environment"
+output: html
 date: 7 Jan 2017
 author: Drew Steen
 ---
