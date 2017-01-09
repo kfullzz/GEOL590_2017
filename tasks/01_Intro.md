@@ -1,5 +1,5 @@
 ---
-title: Task 01: Intro to Reproducible Data Analysis
+title: "Task 01: Intro to Reproducible Data Analysis"
 date: 9 Jan 2016
 author: Drew Steen
 output: html
