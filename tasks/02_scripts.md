@@ -5,7 +5,7 @@ date: 11 January 2017
 ---
 
 # Resources
-* Lecture 02
+* `Lecture 02` (on github under `lectures`)
 * Advanced R (AR) Chapter 1
 * R for Data Science (R4DS) Chapter 1
 
