@@ -8,6 +8,8 @@ date: 11 January 2017
 * `Lecture 02` (on github under `lectures`)
 * Advanced R (AR) Chapter 1
 * R for Data Science (R4DS) Chapter 1
+* [An Introduction to R](https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf "R Introduction") by the R Core Team. 
+* [This Stack Exchange question and answer](http://superuser.com/questions/577875/what-file-extension-does-a-tab-delimited-file-have) about file extensions.
 
 # Tasks: Due Friday, Jan 20
 * Use a text editor (not RStudio) to write the R script shown below, and run it from the command line. (See below for the script)
