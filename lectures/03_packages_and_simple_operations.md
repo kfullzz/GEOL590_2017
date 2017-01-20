@@ -1,5 +1,5 @@
 ---
-title: "Lecture 03: Objects and functions: An extremely brief introduction"
+title: "Lecture 03: Objects, functions and data structures: An extremely brief introduction"
 date: 12 Jan 2017
 author: Drew Steen
 ---
@@ -57,6 +57,18 @@ Objects in R can store different kinds of data. Base R - that is, the software t
 my.vec <- c(4, 5, 6, 7)
 my.vec[2]
 ```
-* **lists** act a bit like a bag, into which we can stuff anything we want. 
+* **lists** act a bit like a bag, into which we can stuff anything we want: vectors, arrays, specialized objects we haven't learned about yet, and, importantly, other lists. These are extremely flexible: anything data you can store in R, you can store in a list.
+* **data frames** are a special kind of list, in which each element is a vector, and each vector has the same length. I think of them like a rectangular table in Excel - they are basically two-dimensional, and since each vector has to have the same length, they can't have a ragged bottom edge. Since each column of a data frame is a vector, the elements in each column have to be of the same type - numeric, character, logical, etc. However, each column can be of a different type: try `data.frame(a=1:3, b=letters[1:3], c=c(TRUE, TRUE, FALSE))`
 
-# Package
+*The tidyverse is organized around data frames*, so we will need to get familiar with them. The value of the data frame for storing scientific data is that it encourages the *tidy* format, in which each row corresponds to a unique observation, and each column corresponds to a unique variable required to identify that observation. For instance, if you sent a survey with 3 questions to 50 people, your data frame would likely have $3\times 50 = 150 rows$. We'll discuss the concept of tidy data more later.
+
+# Packages
+
+When you downloaded R, what you got is called *base R*.* Base R is great, but one of the most valuable features of R is that it is very easy to write *packages*, which add functionality to base R. In their simplest incarnation, packages contain extra functions to do new, useful things. 
+
+We'll explore the structure of packages towards the end of class, but for now we just need to know how to use them. There are two steps to using a function:
+* Install the package on your hard drive. This only has to be done rarely. The `install.packages` function can install any package that is hosted on CRAN (the Comprehensive R Archive Network); most packages that are meant for widespread use are hosted on CRAN. It is also possible to easily install packages that are hosted elsewhere: for instance, the **devtools** package contains the `install_github` function that automatically installs packages that are hosted on github. 
+* Load the package using the `library` function. This needs to be done for each new session of R: as a practical matter, that means every time you restart your computer, restart R Studio, or change between projects.
+
+
+* If you want to be pedantic, you also got something like ten 'core' packages, which for our purposes look just like base R.
