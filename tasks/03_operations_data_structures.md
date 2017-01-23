@@ -1,5 +1,5 @@
 ---
-title: "Task 03: Simple operations and data structures"
+title: "Task 03: Simple operations, data structures and subsetting"
 date: 18 Jan 2017
 author: Drew Steen
 
@@ -11,6 +11,8 @@ author: Drew Steen
 * R4DS Chapter 9-10. As a practical matter we'll work mostly with *tibbles*, but to get there we need to have a good understanding of vectors and data frames.
 
 # Tasks
+
+## Simple operations and data structures: AR Chapter 2
 * Explore vectorization. Explain the differences and the similarities between the following code snippets. What data structure are `a`, `b`, and `c`?
 ```
 a <- 1
@@ -32,4 +34,17 @@ f <- d + e
     * 2.2.2.3 
     * 2.3.1, plus, *why* does `dim()` return what it does?
     * 2.4.5.1:5 (that is, section 2.4.5, questions 1 through 5)
+
+## New simple operation task added Monday
+* **Read in your own data and figure out what type it is**.
+    * Use `read.csv()` to read the file `2016_10_11_plate_reader.csv` in the github `data` directory, and store it in memory as an object. This is an output from an instrument that I have, that measures fluorescence in each well of a 96-well plate. (Hint: use the optional argument `skip = 33`. What effect does that have?)
+    * What kind of object did you create? What data type is each column of that object? (`str()`)
+    * Now install and load the **tidyverse** package. (Remember, this package is a little unusual - it is a wrapper for about a dozen interrelated packages. Here you're using the **readr** package)
+    * Read the same file using the `read_csv` function. How is the resulting object different?
+
+## Subsetting
+AR exercises:
+* 3.1.7 (Data Types exercises): 1 and 4:
+
+
 
