@@ -44,7 +44,7 @@ f3 <- factor(letters, levels = rev(letters))
     * 2.4.5.3: Can you have a data frame with 0 rows? What about 0 columns?
     
 
-## New simple operation task added Monday
+## Simple operations
 * **Read in your own data and figure out what type it is**.
     * Use `read.csv()` to read the file `2016_10_11_plate_reader.csv` in the github `data` directory, and store it in memory as an object. This is an output from an instrument that I have, that measures fluorescence in each well of a 96-well plate. (Hint: use the optional argument `skip = 33`. What effect does that have?)
     * What kind of object did you create? What data type is each column of that object? (`str()`)
