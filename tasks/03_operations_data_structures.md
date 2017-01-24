@@ -3,12 +3,10 @@ title: "Task 03: Simple operations, data structures and subsetting"
 date: 18 Jan 2017
 author: Drew Steen
 
-**This is currently incomplete: tasks from AR Chapter 3 will be added.**
-
 # Resources
 * [An Introduction to R](https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf "R Introduction") by the R Core Team
 * AR Chapter 2-3
-* R4DS Chapter 9-10. As a practical matter we'll work mostly with *tibbles*, but to get there we need to have a good understanding of vectors and data frames.
+* R4DS Chapter 9-10, dealing with *tibbles*. As a practical matter we'll work mostly with *tibbles*, but to get there we need to have a good understanding of vectors, lists and data frames.
 
 # Tasks
 
@@ -30,10 +28,21 @@ f <- d + e
     * Name three ways you could use attributes to make data analysis code more reproducible (i.e., easier for yourself and others to understand). 
     * Create a vector of length 5, and use the `attr` function to associate two different attributes to the vector.
 * AR exercises:
-    * 2.2.2.2 (that is, question 2 in section 2.2.2: "What happens to a factor when you modify its levels?"
-    * 2.2.2.3 
-    * 2.3.1, plus, *why* does `dim()` return what it does?
-    * 2.4.5.1:5 (that is, section 2.4.5, questions 1 through 5)
+    * 2.2.2.2 (that is, question 2 in section 2.2.2): "What happens to a factor when you modify its levels?"
+```
+f1 <- factor(letters)
+levels(f1) <- ref(levels(f1))
+```
+    * 2.2.2.3: What does this code do?
+```
+f2 <- rev(factor(letters))
+f3 <- factor(letters, levels = rev(letters))
+```
+    * 2.3.1.1: What does `dim` return when applied to a vector, **and why**?
+    * 2.4.5.1: What attributes does a data frame possess?
+    * 2.4.5.2: What does `as.matrix()` do when applied to a data frame with columns of different types?
+    * 2.4.5.3: Can you have a data frame with 0 rows? What about 0 columns?
+    
 
 ## New simple operation task added Monday
 * **Read in your own data and figure out what type it is**.
