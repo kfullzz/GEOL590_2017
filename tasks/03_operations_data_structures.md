@@ -43,8 +43,20 @@ f <- d + e
     * Read the same file using the `read_csv` function. How is the resulting object different?
 
 ## Subsetting
-AR exercises:
-* 3.1.7 (Data Types exercises): 1 and 4:
-
+Note that `mtcars` is a data set that comes with R. You don't have to do anything special to load it into memory.
+* Why does `nrow(mtcars)` give a different result than `length(mtcars)`? What does `ncol(mtcars)` return? What is each telling you, and why? 
+* Create a vector that is the `cyl` column of `mtcars` in two different ways:
+    * using the `$` operator
+    * using `[]` subsetting
+* Create a data frame that contains all the columns of `mtcars`, but only with cars that weigh less than 3.0 **OR** more than 4.0 (weight is in the `wt` column)
+* Create a data frame that contains all the **rows** of `mtcars`, but only the `mpg` and `wt`
+* Which cars in the database get gas mileage (`mpg`) equal to the median gas mileage for the set? (Use `median` and `which`).s
+* AR 3.1.7.1: Fix the following common subsetting errors (note that `mtcars` is a dataset that is built into base R; you don't have to do anything special to load it:
+```
+mtcars[mtcars$cyl = 4, ] # Trying to create a data frame of cars with 4 cylinders only
+mtcars[-1:4, ]
+mtcars[mtcars$cyl <= 5]
+mtcars[mtcars$cyl == 4 | 6, ] # The | is an 'or' operator - you want a data frame of cars with 4 OR 6 cylinder engines
+```
 
 
