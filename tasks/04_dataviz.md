@@ -29,13 +29,21 @@ set.seed(1410)
 dsmall <- diamonds[sample(nrow(diamonds), 100), ]
 ```
 * Use `dsmall` to create the following plots:
-    * ![Alt text](../plots/t4p1.png "Optional title")
-    * ![Alt text](../plots/t4p2.png "Optional title")
-    * ![Alt text](../plots/t4p3.png "Optional title")
-    * ![Alt text](../plots/t4p4.png "Optional title")
-    * ![Alt text](../plots/t4p5.png "Optional title")
-* Make the worst plot you possibly can in ggplot2. This plot should be awful in two independent respects:
+    * A scatterplot of `y` vs `x`, colored by z values and faceted by `cut`
+    ![](../plots/t4p1.png "Plot 1")
+    * A scatterplot of `price` vs `carat`, colored by `cut` and smoothed (using the `"lm"` method, without standard error bars)  
+    ![Alt text](../plots/t4p2.png "Plot 2")
+    * A density plot of `carat`, faceted and colored by `clarity`
+    ![Alt text](../plots/t4p3.png "Plot 3")
+    * A boxplot of `price` as a function of `cut`
+    ![Alt text](../plots/t4p4.png "Plot 4")
+    * A scatterplot of `y` versus `x`. The points should be red (`colour = "red")`, the color of the smoothing line should be blue (`colour = "blue"`), and the line should be dashed with fat dashes (`linetype=2`). The x and y labels should be set manually as well. *The trickiest part of this may be to figure out where `colour = "red"` etc should go in the code. Think about mapped vs static aesthetic values.*
+    ![Alt text](../plots/t4p5.png "Plot 5")
+
+## Ugly plot contest:
+Make the worst plot you possibly can in ggplot2. This plot should be awful in two independent respects:
     *  It should represent the data misleadingly (this can sometimes be difficult with ggplot2, but be creative)
     *  It should be as ugly as possible. (`theme` will be helpful here.)
+**Print this plot out and bring it in on Friday. We'll make a gallery of bad plots and the 'winner' will get a prize.
 
 
