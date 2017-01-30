@@ -15,7 +15,7 @@ author: Drew Steen
 # Resources
 * [Getting started with ggplot2](https://rpubs.com/hadley/ggplot-intro) by Hadley Wickham
 * [Cookbook for R](http://www.cookbook-r.com/Graphs/) Graphs chapter
-* Many more web resources on **ggplot2:** google will help you. 
+* Many more web resources on **ggplot2:** google will help you. I found [this tutorial](http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html) to be particularly good.
 
 **Note:** some web resources (including the Wickham ggplot2 book) encourage using ggplot2's `qplot` syntax, which is simpler (but, in my mind, more confusing) than the standard syntax. I encourage you to ignore this syntax; in my opinion it just makes it more difficult to understand **ggplot2**.
 
