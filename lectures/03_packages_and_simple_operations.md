@@ -4,8 +4,6 @@ date: 12 Jan 2017
 author: Drew Steen
 ---
 
-**THIS IS CURRENTLY INCOMPLETE**
-
 # Objects
 
 In [Task 02](https://github.com/adsteen/GEOL590_2017/blob/master/tasks/02_scripts.md "Task 02"), you used some extremely basic functionality of R: you created a few *objects* (which you named `x`, `y`, and `d`), and you used the `c()`, `plot()` and `write.csv()` *functions* to do stuff to those objects.
