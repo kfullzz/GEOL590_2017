@@ -4,10 +4,16 @@ date: 1 February 2017
 author: Drew Steen
 ---
 
+**Incomplete version of Task 5**
+
 Resources:
 * Chacon **Pro Git**, particularly chapters 1-3 and 6
+* [Github Bootcamp](https://help.github.com/categories/bootcamp/) and other resources at github's [help](https://help.github.com/) site
+* The git cheat sheet [here](https://www.git-tower.com/blog/git-cheat-sheet/) (probably don't give them your email address)
+* Lots of other resources all over the web
 
 Tasks:
+(Note: Unlike previous tasks, you can't easily write them as a script.)
 1. Create a github account
 2. Install git on your laptop
 3. Initialize a git repository (repo) in your local GEOL590_2017 folder
