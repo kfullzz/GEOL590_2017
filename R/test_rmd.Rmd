@@ -1,6 +1,6 @@
 ---
 title: "Test notebook output"
-output: html_notebook
+output: github_document
 ---
 
 This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook, meant to test how github displays html generated from R Notebooks. 
