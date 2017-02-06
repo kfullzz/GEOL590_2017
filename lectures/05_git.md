@@ -46,5 +46,7 @@ This lecture borrows heavily from [Chacon (2014) Pro Git](https://git-scm.com/bo
 
 ## A very simple workflow
 
-![A simple workflow, v1](lectures/05_git_images/lr-branches-1.png)
-![A simple workflow, v2](lectures/05_git_images/lr-branches-2.png)
+(Images are Fig 26 and 27 from Chacon Chapter 3.4)
+
+![A simple workflow, v1](05_git_images/lr-branches-1.png)
+![A simple workflow, v2](05_git_images/lr-branches-2.png)
