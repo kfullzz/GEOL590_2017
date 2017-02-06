@@ -27,7 +27,7 @@ This lecture borrows heavily from [Chacon (2014) Pro Git](https://git-scm.com/bo
 * This is highly platform-specific: Follow the instructions in [Chacon Ch. 1.5](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 ## Useful commands
-* The three states: Working directory, staging area, and git repository:
+* The [three states](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository): Working directory, staging area, and git repository:
 ![circle_of_git](05_git_images/lifecycle.png "Chacon Fig 8")
     * `git add`: move files in the working directory to the staging area: `git add myscript.R`. This means *add to the next commit* not *add to the project*.
     * `git commit`: move files from the staging area to the repo: `git commit -m "corrected normalization procedure"`
@@ -46,3 +46,5 @@ This lecture borrows heavily from [Chacon (2014) Pro Git](https://git-scm.com/bo
 
 ## A very simple workflow
 
+![A simple workflow, v1](lectures/05_git_images/lr-branches-1.png)
+![A simple workflow, v2](lectures/05_git_images/lr-branches-2.png)
