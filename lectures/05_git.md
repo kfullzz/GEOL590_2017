@@ -4,6 +4,7 @@ date: 6 Feb 2017
 author: Drew Steen
 ---
 
+DELETE ALL THIS TEXT
 
 
 # Version control: Why
@@ -27,9 +28,9 @@ author: Drew Steen
 
 ## Mechanics
 * The three states: Working directory, staging area, and git repository
-    * Use `git add` to move files in the working directory to the staging area: `git add myscript.R`
+    * Use `git add` to move files in the working directory to the staging area: `git add myscript.R`. This means *add to the next commit* not *add to the project*.
     * Use `git commit` to move files from the staging area to the repo: `git commit -m "corrected normalization procedure"`
-* 
+* Check the status of your repo: `git status`
 
 ## Workflow
 
