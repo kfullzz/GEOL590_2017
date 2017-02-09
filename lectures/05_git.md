@@ -19,6 +19,7 @@ This lecture borrows heavily from [Chacon (2014) Pro Git](https://git-scm.com/bo
 * Based on 'commits'
 * 'Snapshots' of the state of your 
 * All this information lives in the `.git` directory - this is the actual repo
+   *When initializing a local repo, it will add a .git hidden file to a folder that is the acting repo
 
 # Git: How
 
